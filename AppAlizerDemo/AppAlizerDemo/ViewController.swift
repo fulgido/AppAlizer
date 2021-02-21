@@ -12,8 +12,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let modelName = UIDevice.modelName
-        print("modelName: ", modelName)
+        print("ModelName: ", UIDevice.modelName)
+        print("Simulator: ", UIDevice.checkSimulator)
+        print("iOSVersion: ", UIDevice.current.systemVersion)
+        print("isJailBroken: ", UIDevice.checkJailBreak)
     }
 
 }

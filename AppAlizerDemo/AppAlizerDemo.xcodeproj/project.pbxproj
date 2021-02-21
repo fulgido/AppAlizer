@@ -14,7 +14,7 @@
 		AD8A00AF25E2E8C8002B16AC /* AppAlizerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD8A00AD25E2E8C8002B16AC /* AppAlizerDemo.xcdatamodeld */; };
 		AD8A00B125E2E8CA002B16AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8A00B025E2E8CA002B16AC /* Assets.xcassets */; };
 		AD8A00B425E2E8CA002B16AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8A00B225E2E8CA002B16AC /* LaunchScreen.storyboard */; };
-		AD8A00BE25E2E972002B16AC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8A00BD25E2E972002B16AC /* Extension.swift */; };
+		AD8A00BE25E2E972002B16AC /* DeviceAlizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8A00BD25E2E972002B16AC /* DeviceAlizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		AD8A00B025E2E8CA002B16AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8A00B325E2E8CA002B16AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD8A00B525E2E8CA002B16AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD8A00BD25E2E972002B16AC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AD8A00BD25E2E972002B16AC /* DeviceAlizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAlizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		AD8A00BC25E2E961002B16AC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				AD8A00BD25E2E972002B16AC /* Extension.swift */,
+				AD8A00BD25E2E972002B16AC /* DeviceAlizer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8A00BE25E2E972002B16AC /* Extension.swift in Sources */,
+				AD8A00BE25E2E972002B16AC /* DeviceAlizer.swift in Sources */,
 				AD8A00A925E2E8C8002B16AC /* ViewController.swift in Sources */,
 				AD8A00A525E2E8C8002B16AC /* AppDelegate.swift in Sources */,
 				AD8A00A725E2E8C8002B16AC /* SceneDelegate.swift in Sources */,
@@ -312,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.fulgido.AppAlizerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.fulgido.AppAlizerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
