@@ -6,16 +6,16 @@
 //
 
 import UIKit
+import AppAlizer
 
 class ViewController: UIViewController {
-
+    
+    let appAlizer : AppAlizer = AppAlizer()
+    @IBOutlet weak var labelOutput: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("ModelName: ", UIDevice.modelName)
-        print("Simulator: ", UIDevice.checkSimulator)
-        print("iOSVersion: ", UIDevice.current.systemVersion)
-        print("isJailBroken: ", UIDevice.checkJailBreak)
+        labelOutput.text = appAlizer.startToAnalyzer()
     }
 
 }

@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AD35C87125E2E7A500F99FFA /* AppAlizer.h in Headers */ = {isa = PBXBuildFile; fileRef = AD35C86F25E2E7A500F99FFA /* AppAlizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADE8ABCE25E4571400E8E206 /* AppAlizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8ABCC25E4571400E8E206 /* AppAlizer.swift */; };
+		ADE8ABCF25E4571400E8E206 /* DeviceAlizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8ABCD25E4571400E8E206 /* DeviceAlizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD35C86C25E2E7A500F99FFA /* AppAlizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppAlizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD35C86F25E2E7A500F99FFA /* AppAlizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppAlizer.h; sourceTree = "<group>"; };
 		AD35C87025E2E7A500F99FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE8ABCC25E4571400E8E206 /* AppAlizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAlizer.swift; sourceTree = "<group>"; };
+		ADE8ABCD25E4571400E8E206 /* DeviceAlizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceAlizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		AD35C86E25E2E7A500F99FFA /* AppAlizer */ = {
 			isa = PBXGroup;
 			children = (
+				ADE8ABCC25E4571400E8E206 /* AppAlizer.swift */,
+				ADE8ABCD25E4571400E8E206 /* DeviceAlizer.swift */,
 				AD35C86F25E2E7A500F99FFA /* AppAlizer.h */,
 				AD35C87025E2E7A500F99FFA /* Info.plist */,
 			);
@@ -94,6 +100,7 @@
 				TargetAttributes = {
 					AD35C86B25E2E7A500F99FFA = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE8ABCF25E4571400E8E206 /* DeviceAlizer.swift in Sources */,
+				ADE8ABCE25E4571400E8E206 /* AppAlizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,8 @@
 		AD35C87525E2E7A500F99FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7P8P2CDK4Y;
@@ -278,6 +289,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -286,6 +298,8 @@
 		AD35C87625E2E7A500F99FFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7P8P2CDK4Y;

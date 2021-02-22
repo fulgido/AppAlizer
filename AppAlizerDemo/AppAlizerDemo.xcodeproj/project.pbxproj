@@ -14,8 +14,33 @@
 		AD8A00AF25E2E8C8002B16AC /* AppAlizerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD8A00AD25E2E8C8002B16AC /* AppAlizerDemo.xcdatamodeld */; };
 		AD8A00B125E2E8CA002B16AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8A00B025E2E8CA002B16AC /* Assets.xcassets */; };
 		AD8A00B425E2E8CA002B16AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8A00B225E2E8CA002B16AC /* LaunchScreen.storyboard */; };
-		AD8A00BE25E2E972002B16AC /* DeviceAlizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8A00BD25E2E972002B16AC /* DeviceAlizer.swift */; };
+		ADE8AC1925E45D8500E8E206 /* AppAlizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE8AC1825E45D7700E8E206 /* AppAlizer.framework */; };
+		ADE8AC1A25E45D8500E8E206 /* AppAlizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADE8AC1825E45D7700E8E206 /* AppAlizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADE8AC1725E45D7700E8E206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE8AC1325E45D7700E8E206 /* AppAlizer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AD35C86C25E2E7A500F99FFA;
+			remoteInfo = AppAlizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADE8AC1125E45B7500E8E206 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ADE8AC1A25E45D8500E8E206 /* AppAlizer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD8A00A125E2E8C8002B16AC /* AppAlizerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAlizerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,7 +52,7 @@
 		AD8A00B025E2E8CA002B16AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8A00B325E2E8CA002B16AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD8A00B525E2E8CA002B16AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD8A00BD25E2E972002B16AC /* DeviceAlizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAlizer.swift; sourceTree = "<group>"; };
+		ADE8AC1325E45D7700E8E206 /* AppAlizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppAlizer.xcodeproj; path = ../../AppAlizer/AppAlizer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE8AC1925E45D8500E8E206 /* AppAlizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +72,7 @@
 			children = (
 				AD8A00A325E2E8C8002B16AC /* AppAlizerDemo */,
 				AD8A00A225E2E8C8002B16AC /* Products */,
+				ADE8AC0A25E45B1400E8E206 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +87,7 @@
 		AD8A00A325E2E8C8002B16AC /* AppAlizerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AD8A00BC25E2E961002B16AC /* Utils */,
+				ADE8AC1325E45D7700E8E206 /* AppAlizer.xcodeproj */,
 				AD8A00A425E2E8C8002B16AC /* AppDelegate.swift */,
 				AD8A00A625E2E8C8002B16AC /* SceneDelegate.swift */,
 				AD8A00A825E2E8C8002B16AC /* ViewController.swift */,
@@ -73,12 +100,19 @@
 			path = AppAlizerDemo;
 			sourceTree = "<group>";
 		};
-		AD8A00BC25E2E961002B16AC /* Utils */ = {
+		ADE8AC0A25E45B1400E8E206 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD8A00BD25E2E972002B16AC /* DeviceAlizer.swift */,
 			);
-			path = Utils;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADE8AC1425E45D7700E8E206 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADE8AC1825E45D7700E8E206 /* AppAlizer.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +125,7 @@
 				AD8A009D25E2E8C8002B16AC /* Sources */,
 				AD8A009E25E2E8C8002B16AC /* Frameworks */,
 				AD8A009F25E2E8C8002B16AC /* Resources */,
+				ADE8AC1125E45B7500E8E206 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +161,28 @@
 			mainGroup = AD8A009825E2E8C8002B16AC;
 			productRefGroup = AD8A00A225E2E8C8002B16AC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ADE8AC1425E45D7700E8E206 /* Products */;
+					ProjectRef = ADE8AC1325E45D7700E8E206 /* AppAlizer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AD8A00A025E2E8C8002B16AC /* AppAlizerDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ADE8AC1825E45D7700E8E206 /* AppAlizer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AppAlizer.framework;
+			remoteRef = ADE8AC1725E45D7700E8E206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AD8A009F25E2E8C8002B16AC /* Resources */ = {
@@ -151,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8A00BE25E2E972002B16AC /* DeviceAlizer.swift in Sources */,
 				AD8A00A925E2E8C8002B16AC /* ViewController.swift in Sources */,
 				AD8A00A525E2E8C8002B16AC /* AppDelegate.swift in Sources */,
 				AD8A00A725E2E8C8002B16AC /* SceneDelegate.swift in Sources */,
